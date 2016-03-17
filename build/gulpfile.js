@@ -46,11 +46,10 @@ gulp.task('js',function(){
       }
     }))
     .pipe(order([
-      // 'assets/scripts/lib/jquery.min.js',
+      'assets/scripts/lib/jquery.js',
       // 'assets/scripts/lib/velocity.js',
       // 'assets/scripts/lib/velocity-ui.js',
       // 'assets/scripts/lib/slick.js',
-      // 'assets/scripts/lib/waypoints.js',
       'assets/scripts/lib/*.js',
       'assets/scripts/modules/helpers.js',
       'assets/scripts/modules/*.js',
@@ -69,7 +68,8 @@ gulp.task('js',function(){
 });
 gulp.task('default',function(){
   browserSync.init({
-        // proxy: "nret.dev"
+      
+        proxy: "http://192.168.33.10/",
         notify: false
     });
   gulp.watch('src/scripts/**/*.js',['js','reload']);
