@@ -1,0 +1,27 @@
+{
+  "name": "ayanas build",
+  "version": "1.0.0",
+  "description": "ayanas cms",
+  "author": "Jamal Powell",
+  "url": "http://domanistudios.com",
+  "license": "MIT License",
+  "keywords": "gulp",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-combine-media-queries": "*",
+    "gulp-concat": "*",
+    "gulp-csscomb": "*",
+    "gulp-jshint": "^2.0.0",
+    "gulp-minify-css": "*",
+    "gulp-notify": "*",
+    "gulp-order": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "jshint": "^2.8.0"
+  }
+}

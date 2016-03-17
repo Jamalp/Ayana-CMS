@@ -1,0 +1,30 @@
+
+
+
+
+{% extends "_layout" %}
+{% set title = "News" %}
+
+{% block content %}
+	<h1>{{entry.title}}</h1>
+
+	{% for entry in craft.entries.section('recipes').find() %}
+		<article>
+			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+			{{ entry.body }}
+		</article>
+	{% endfor %}
+
+
+{% if entry.ingredientList | length %}
+    <h3>Ingredients</h3>
+
+    <ul>
+        {% for row in entry.ingredientList %}
+            <li>{{ row.ingredient }} - {{ row.quantity }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}
