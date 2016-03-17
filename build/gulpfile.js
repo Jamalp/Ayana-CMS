@@ -46,7 +46,7 @@ gulp.task('js',function(){
       }
     }))
     .pipe(order([
-      // 'assets/scripts/lib/jquery.min.js',
+      'assets/scripts/lib/jquery.js',
       // 'assets/scripts/lib/velocity.js',
       // 'assets/scripts/lib/velocity-ui.js',
       // 'assets/scripts/lib/slick.js',
